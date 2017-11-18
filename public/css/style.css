@@ -1,0 +1,42 @@
+div.small-box div.inner {
+	height: 500px;
+}
+
+.iconos{
+	margin-top: 60px;
+	font-size: 12em;
+}
+
+.small-box p {
+	margin-top: 30%;
+     font-size: 30px;
+     font-weight: bold;
+}
+
+.link{
+	text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+	text-decoration: none;
+    color: yellow;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+#btnAgregarArt{
+   margin-top: 5px!important;
+}
+#numfactura{
+  display: none;
+}
+
+#guiadiv{
+  display: none;
+}
