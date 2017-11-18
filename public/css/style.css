@@ -1,42 +1,45 @@
 div.small-box div.inner {
-	height: 500px;
+    height: 100%;
+    min-height: 709px;
 }
 
-.iconos{
-	margin-top: 60px;
-	font-size: 12em;
+.iconos {
+    margin-top: 60px;
+    font-size: 12em;
 }
 
 .small-box p {
-	margin-top: 30%;
-     font-size: 30px;
-     font-weight: bold;
+    margin-top: 30%;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.link{
-	text-decoration: none;
+.link {
+    text-decoration: none;
     color: white;
 }
 
-.link:hover{
-	text-decoration: none;
+.link:hover {
+    text-decoration: none;
     color: yellow;
 }
 
 .pull-left {
-  float: left !important;
+    float: left !important;
 }
+
 .pull-right {
-  float: right !important;
+    float: right !important;
 }
 
-#btnAgregarArt{
-   margin-top: 5px!important;
-}
-#numfactura{
-  display: none;
+#btnAgregarArt {
+    margin-top: 5px!important;
 }
 
-#guiadiv{
-  display: none;
+#numfactura {
+    display: none;
+}
+
+#guiadiv {
+    display: none;
 }
