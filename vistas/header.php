@@ -29,14 +29,6 @@ if (strlen(session_id()) < 1)
     <link rel="stylesheet" href="../public/css/bootstrap-select.min.css">
     <!-- Imprimir js-->
     <!-- <script src="../public/js/jquery.PrintArea.js"></script>-->    
-    <script src="../public/js/jspdf.min.js"></script>   
-    <script src="../public/js/html2canvas.min.js"></script>
-    <script src="../public/js/html2pdf.js"></script>
-    <!--<script src="../public/js/jspdf.debug.js"></script>-->
-    <script type="text/javascript" src="../public/js/jspdf.plugin.standard_fonts_metrics.js"></script>
-    <script type="text/javascript" src="../public/js/jspdf.plugin.split_text_to_size.js"></script>
-    <!--<script type="text/javascript" src="../public/js/jspdf.plugin.from_html.js"></script>-->
-
   </head>
   <body class="hold-transition skin-blue-light sidebar-mini">
     <div class="wrapper">
@@ -112,8 +104,8 @@ if (strlen(session_id()) < 1)
               <ul class="treeview-menu">
                 <li><a href="producto.php"><i class="fa fa-circle-o"></i> Agregar producto</a></li>
                 <li><a href="mayorista.php"><i class="fa fa-circle-o"></i> Mayorista</a></li>
-                <li><a href="clientefinal.php"><i class="fa fa-circle-o"></i> Cliente Final</a></li>
-                <li><a href="serviciotecnico.php"><i class="fa fa-circle-o"></i> Servicio Técnico</a></li>
+                <li><a href="clientef.php"><i class="fa fa-circle-o"></i> Cliente Final</a></li>
+                <li><a href="serviciot.php"><i class="fa fa-circle-o"></i> Servicio Técnico</a></li>
               </ul>
             </li>            
             <li class="treeview">
@@ -126,33 +118,10 @@ if (strlen(session_id()) < 1)
                 <li><a href="permiso.php"><i class="fa fa-circle-o"></i> Permisos</a></li>
               </ul>
             </li>
-            <li class="treeview">
+            <li>
               <a href="#">
-                <i class="fa fa-bar-chart"></i> <span>Consulta Mayoristas</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="consultacompras.php"><i class="fa fa-circle-o"></i> Consulta Cliente Mayorista</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-bar-chart"></i> <span>Consulta Cliente final</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="consultaventas.php"><i class="fa fa-circle-o"></i> Consulta Cliente Final</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-bar-chart"></i> <span>Consulta Servicio Técnico</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="consultaventas.php"><i class="fa fa-circle-o"></i> Consulta Servicio Técnico</a></li>
-              </ul>
-            </li>
+                <i class="fa fa-envelope"></i> Notificación</a>
+            </li>            
             <li>
               <a href="#">
                 <i class="fa fa-plus-square"></i> <span>Ayuda</span>
