@@ -71,8 +71,9 @@ if ($_SESSION['casos']==1)
             <h4 class="modal-title" id="myModalLabel">Importar productos</h4>
           </div>
           <div class="modal-body">
-            <for name="listaproductos" id="listaproductos" method="POST">
-              <input type="file" name="productos" id="productos" class="form-control">
+            <form name="listaproductos" id="listaproductos"  enctype="multipart/form-data" method="POST">
+              <input id="archivo" accept=".csv" name="archivo" type="file"  class="form-contrpl"> 
+              <input name="MAX_FILE_SIZE" type="hidden" value="20000" /> 
               <br>
               <button type="submit" class="btn btn-primary" id="btnCargar">Cargar <i class="fa fa-upload"></i></button>
             </form>
