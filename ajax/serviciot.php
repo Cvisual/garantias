@@ -95,7 +95,7 @@ switch ($_GET["op"]){
 	while ($reg=$rspta->fetch_object()){
 
 		$data[]=array(
-			"0"=>'<button class="btn btn-warning btn-sm" onclick="mostrar('.$reg->idserviciot.')"><i class="fa fa-pencil" aria-hidden="true"></i></button>'.' <button class="btn btn-danger btn-sm" onclick="eliminar('.$reg->idserviciot.')"><i class="fa fa-close"></i></button>',
+			"0"=>'<button class="btn btn-warning btn-sm" onclick="mostrar('.$reg->idserviciotecnico.')"><i class="fa fa-pencil" aria-hidden="true"></i></button>'.' <button class="btn btn-danger btn-sm" onclick="eliminar('.$reg->idserviciotecnico.')"><i class="fa fa-close"></i></button>',
 			"1"=>$reg->nombre,
 			"2"=>$reg->num_documento,
 			"3"=>$reg->telefono,

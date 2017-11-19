@@ -155,6 +155,9 @@ switch ($_GET["op"]){
 			in_array(2,$valores)?$_SESSION['casos']=1:$_SESSION['casos']=0;
 			in_array(3,$valores)?$_SESSION['acceso']=1:$_SESSION['acceso']=0;
 			in_array(4,$valores)?$_SESSION['consultas']=1:$_SESSION['consultas']=0;
+			in_array(4,$valores)?$_SESSION['mayorista']=1:$_SESSION['mayorista']=0;
+			in_array(4,$valores)?$_SESSION['servicio tecnico']=1:$_SESSION['servicio tecnico']=0;
+			in_array(4,$valores)?$_SESSION['cliente final']=1:$_SESSION['cliente final']=0;
 
 
 	    }

@@ -167,7 +167,7 @@ function mostrar(idserviciotecnico) {
             $("#btnGuardar").show();
         })
         //Listamos los detalles 
-    $.post("../ajax/serviciot.php?op=listarDetalle&id=" + idservicioT, function(r) {
+    $.post("../ajax/serviciot.php?op=listarDetalle&id=" + idserviciotecnico, function(r) {
         $("#detalles").html(r);
     });
 }
@@ -228,9 +228,8 @@ function eliminarDetalle(indice) {
 }
 
 //Funcion para imprimir 
-function imprimir() {
-    print($('#formulario'));
-}
-
+$("#imprimir").click(function() {
+    print($('#formContent'));
+});
 
 init();

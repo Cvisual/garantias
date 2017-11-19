@@ -63,7 +63,7 @@ Class Serviciot {
 	//Implementamos un metodo para listar los registros
 	public function listar(){
 
-		$sql="SELECT m.idserviciotecnico, m.nombre, m.tipo_documento, m.num_documento, m.telefono, m.direccion, m.email, DATE(m.fecha_recepcion) as fechar, m.fecha_entrega, l.nombre as lrecepcion,  m.guia, e.idestado, e.nombre as estado, u.idusuario, u.nombre as usuario, m.imagen FROM serviciotecnico m INNER JOIN lugarrecepcion l ON m.idlugarrecepcion=l.idlugarrecepcion INNER JOIN estado e ON m.idestado=e.idestado INNER JOIN usuario u ON m.idusuario=u.idusuario ORDER BY m.idserviciotecnicodesc";
+		$sql="SELECT m.idserviciotecnico, m.nombre, m.tipo_documento, m.num_documento, m.telefono, m.direccion, m.email, DATE(m.fecha_recepcion) as fechar, m.fecha_entrega, l.nombre as lrecepcion,  m.guia, e.idestado, e.nombre as estado, u.idusuario, u.nombre as usuario, m.imagen FROM serviciotecnico m INNER JOIN lugarrecepcion l ON m.idlugarrecepcion=l.idlugarrecepcion INNER JOIN estado e ON m.idestado=e.idestado INNER JOIN usuario u ON m.idusuario=u.idusuario ORDER BY m.idserviciotecnico desc";
 		return ejecutarConsulta($sql);
 	}
 }
