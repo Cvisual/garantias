@@ -6,7 +6,6 @@ $producto = new Producto();
 $idproducto=isset($_POST["idproducto"])? limpiarCadena($_POST["idproducto"]):"";
 $nombre=isset($_POST["nombre"])? limpiarCadena($_POST["nombre"]):"";
 
-
 switch ($_GET["op"]){
 	case 'guardaryeditar':
 	
@@ -19,6 +18,7 @@ switch ($_GET["op"]){
 			echo $rspta ? "Artículo actualizado" : "Artículo no se pudo actualizar";
 		}
 	break;
+
 
 	case 'mostrar':
 		$rspta=$producto->mostrar($idproducto);

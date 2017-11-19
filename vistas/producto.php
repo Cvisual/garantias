@@ -22,7 +22,7 @@ if ($_SESSION['casos']==1)
               <div class="col-md-12">
                   <div class="box">
                     <div class="box-header with-border">
-                          <h1 class="box-title">Producto <button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button>&nbsp;<button class="btn btn-info" id="btnExcel" ><i class="fa fa-arrow-up"></i> Importar</button></h1>
+                          <h1 class="box-title"><button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)"><i class="fa fa-plus-circle"></i> Agregar</button>&nbsp;<button class="btn btn-info" id="btnExcel">Importar <i class="fa fa-arrow-up"></i></button></h1>
                         <div class="box-tools pull-right">
                         </div>
                     </div>
@@ -60,9 +60,29 @@ if ($_SESSION['casos']==1)
                   </div><!-- /.box -->
               </div><!-- /.col -->
           </div><!-- /.row -->
-      </section><!-- /.content -->
-
+      </section><!-- /.content -->      
     </div><!-- /.content-wrapper -->
+    <!-- Modal -->
+    <div class="modal fade" id="importar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Importar productos</h4>
+          </div>
+          <div class="modal-body">
+            <for name="listaproductos" id="listaproductos" method="POST">
+              <input type="file" name="productos" id="productos" class="form-control">
+              <br>
+              <button type="submit" class="btn btn-primary" id="btnCargar">Cargar <i class="fa fa-upload"></i></button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <!--Fin-Contenido-->
 <?php
 }
