@@ -97,6 +97,28 @@ function guardaryeditar(e) {
     limpiar();
 }
 
+//funcion para guardar productos
+function guardarProductos(e) {
+    e.preventDefault(); //No se activará la acción predeterminada del evento
+    $("#btnCargar").prop("disabled", true);
+    var formData = new FormData($("#listaproductos")[0]);
+
+    $.ajax({
+        url: "../ajax/importar.php",
+        type: "POST",
+        data: formData,
+        contentType: false,
+        processData: false,
+
+        success: function(datos) {
+            bootbox.alert(datos);
+            tabla.ajax.reload();
+        }
+
+    });
+    limpiar();
+}
+
 
 
 //fucncion para abrir la ventana modal
